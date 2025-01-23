@@ -1,0 +1,79 @@
+### Pseudocode for "Guess the Number" Game
+
+//   1. **Initialize Variables:**
+// - Set `computerNumber` to a random number between 1 and 10
+//  - Set `attempts` to 3
+// - Initialize an empty array `guessHistory` 
+
+/*const computerNumber(1 - 10);*/
+/*const resetBtn = document.querySelector(".reset-btn");*/
+/*const decrementBtn = document.querySelector(".decrement-btn");*/
+const computerNumber=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let attempts()
+let guessHistory[]
+
+
+
+
+/* function decrementCount() {
+   
+    count = count - 1;
+} */ 
+
+
+
+
+
+
+
+
+
+
+
+
+2. **User Enters Number:**
+  
+   - Capture input `userGuess`
+
+3. **Check User's Guess:**
+   - If `userGuess` is equal to `computerNumber`:
+     1. Display "Congratulations! You guessed correctly."
+     2. End game
+
+4. **If User's Guess is Incorrect:**
+   - Decrease `attempts` by 1
+   - Add `userGuess` to `guessHistory`
+   - If `userGuess` is too high:
+       - Display "Too high!" in "Result:" section
+   - If `userGuess` is too low: 
+       - Display "Too low!" in "Result:" section
+
+5. **Update Result Section:**
+   - Display the following:
+     - "Result:" with feedback (correct, too high, too low)
+     - "Your Guess:" with `userGuess`
+     - "Computer Guess:" with `computerNumber` (optional, depending on game design)
+     - "Guess History:" with `guessHistory`
+
+6. **Handle Submit Guess Button:**
+   - When "Submit Guess" button is clicked:
+     1. Execute game logic
+     2. Check if `attempts` are greater than 0
+     3. If `attempts` are 0 and the guess is still incorrect:
+        1. Display "Game Over! The correct number was `computerNumber`."
+
+7. **Handle Restart Button:**
+   - When "Restart" button is clicked:
+     1. Reset `computerNumber`
+     2. Reset `attempts` to 3
+     3. Clear `guessHistory`
+     4. Clear displayed sections for results, user guess, computer guess, and guess history
+     5. Display: "Game restarted. You have 3 guesses."
+
+### Summary of Key Steps:
+
+1. Initialize game variables.
+2. Display a welcome message.
+3. Capture and check the user's guess.
+4. Provide feedback and update the result section.
+5. Handle button clicks for submitting guesses and restarting the game.
